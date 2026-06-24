@@ -28,9 +28,11 @@ WM. Design が制作を担当しています。
 
 ```
 craft-corporate-site/
-├── index.html        # TOPページ HTML
-├── style.css         # 共通スタイルシート
-├── logo.webp         # ロゴ画像
+├── index.html
+├── css/
+│   └── style.css
+├── images/
+│   └── logo.webp
 └── README.md
 ```
 
