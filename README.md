@@ -73,7 +73,7 @@ craft-corporate-site/
 ① ワイヤーフレーム作成（Figma）
 ② クライアント確認・ヒアリング
 ③ HTML / CSS コーディング        ← 現在地
-④ WordPress / Blocksy 実装
+④ WordPress 
 ⑤ コンテンツ入稿・調整
 ⑥ 公開
 ```
@@ -98,10 +98,3 @@ craft-corporate-site/
 | `feature/***` | 機能・ページ単位の作業ブランチ |
 
 ---
-
-## 更新履歴
-
-| 日付 | 内容 |
-|------|------|
-| 2024-** | リポジトリ作成・初回コミット |
-| 2024-** | TOPページ HTML / CSS 分離 |
