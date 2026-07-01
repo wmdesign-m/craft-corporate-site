@@ -1289,6 +1289,24 @@ h2.heading {
 }
 
 /* ===================== Responsive ===================== */
+
+@media (max-width: 1260px) {
+  .about__body {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  }
+
+  .about__text,
+  .about__media,
+  .about__belief {
+    min-width: 0;
+  }
+
+  .about__belief {
+    grid-column: 1 / -1;
+    box-shadow: 4px 4px 0 var(--blue);
+  }
+}
+
 @media (max-width: 1120px) {
   .nav,
   .header__right .btn {
@@ -1334,11 +1352,14 @@ h2.heading {
   .about__media {
     order: 1;
     max-width: 420px;
+    width: 100%;
     margin-inline: auto;
   }
 
   .about__belief {
     order: 2;
+    grid-column: auto;
+    width: 100%;
   }
 
   .strength__grid {
