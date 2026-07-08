@@ -1,19 +1,18 @@
-/* =================================================================
+/* ==================================================
    style.css  |  株式会社クラフト  Corporate Site
-   WM. Design  ©2024
-   -----------------------------------------------------------------
+   -------------------------------------------------
    ロゴカラー参照
      Yellow  #F7C530 / Deep #E0A815 / Soft #FDEFC4
      Red     #E5402E / Deep #C72E1E
      Blue    #3D72B4 / Deep #2C5588 / Soft #E4EFF9
-   -----------------------------------------------------------------
+   -------------------------------------------------
    フォント（BRONSON & CO. 参照）
      Hero    : Anton            （ヒーロー大見出し・超極太）
      Display : Oswald           （セクション見出し・コンデンスドアメリカン）
      Body    : Noto Sans JP     （日本語本文）
      Label   : Inter            （ボタン・ラベル・メタ情報）
      Accent  : Pacifico         （装飾アクセント）
-   ================================================================= */
+   ================================================== */
 
 /* ===================== Tokens ===================== */
 :root {
@@ -148,7 +147,7 @@ button {
   border-bottom: none;
 }
 
-/* ===================== Eyebrow / headings ===================== */
+/* =============== Eyebrow / headings ================= */
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -205,7 +204,7 @@ h2.heading {
   color: rgba(255, 248, 233, 0.92);
 }
 
-/* ===================== Buttons ===================== */
+/* ==================== Buttons ===================== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -280,7 +279,7 @@ h2.heading {
   border-color: rgba(255, 248, 233, 0.4);
 }
 
-/* ===================== Placeholder photography ===================== */
+/* ============= Placeholder photography ============ */
 .ph {
   position: relative;
   width: 100%;
@@ -1032,6 +1031,10 @@ h2.heading {
   letter-spacing: 0.02em;
 }
 
+.about__text .btn {
+  margin-top: 32px;
+}
+
 .about__media {
   --r: 3/3.55;
   max-width: 360px;
@@ -1143,6 +1146,14 @@ h2.heading {
   margin: 0;
   font-size: var(--fs-body);
   color: var(--ink);
+}
+
+.company__row dd small {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.82rem;
+  line-height: 1.8;
+  color: var(--ink-soft);
 }
 
 /* ===================== Contact ===================== */
@@ -1289,21 +1300,33 @@ h2.heading {
 }
 
 /* ===================== Responsive ===================== */
-
-@media (max-width: 1260px) {
+@media (min-width: 981px) and (max-width: 1200px) {
   .about__body {
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+    grid-template-columns: minmax(300px, 360px) minmax(360px, 520px);
+    gap: 40px 56px;
+    max-width: 920px;
+    margin-inline: auto;
+    align-items: start;
+    justify-content: center;
   }
 
-  .about__text,
-  .about__media,
-  .about__belief {
-    min-width: 0;
-  }
-
-  .about__belief {
+  .about__text {
     grid-column: 1 / -1;
-    box-shadow: 4px 4px 0 var(--blue);
+    order: 0;
+  }
+
+  .about__media {
+    grid-column: 1;
+    order: 1;
+    max-width: 360px;
+    margin-inline: auto;
+  }
+
+  .about__belief {
+    grid-column: 2;
+    order: 2;
+    max-width: 520px;
+    margin-top: 46px;
   }
 }
 
@@ -1343,6 +1366,9 @@ h2.heading {
 
   .about__body {
     grid-template-columns: 1fr;
+    gap: 48px;
+    max-width: 720px;
+    margin-inline: auto;
   }
 
   .about__text {
@@ -1351,15 +1377,14 @@ h2.heading {
 
   .about__media {
     order: 1;
-    max-width: 420px;
-    width: 100%;
+    max-width: 360px;
     margin-inline: auto;
   }
 
   .about__belief {
     order: 2;
-    grid-column: auto;
-    width: 100%;
+    max-width: 520px;
+    margin-inline: auto;
   }
 
   .strength__grid {
@@ -1556,7 +1581,7 @@ h2.heading {
   }
 
   .about__body {
-    gap: 42px;
+    gap: 38px;
   }
 
   .about__text .heading {
@@ -1569,11 +1594,11 @@ h2.heading {
   }
 
   .about__media {
-    max-width: 340px;
+    max-width: 300px;
   }
 
   .about__belief {
-    padding: 34px 26px;
+    padding: 32px 24px;
   }
 
   .about__belief p {
