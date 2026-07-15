@@ -3,17 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>事業内容 | 株式会社CRAFT</title>
+    <title>
+      事業内容 | 衛生設備工事・水まわりリフォーム・公共工事 | 株式会社CRAFT
+    </title>
     <meta
       name="description"
-      content="株式会社CRAFTの事業内容。衛生設備工事・水まわりリフォーム・公共工事を一貫対応。確かな技術と誠実な対応で、安心できる暮らしを支えます。"
+      content="株式会社CRAFTの事業内容をご紹介します。給排水設備などの衛生設備工事、水まわりリフォーム、公共施設の設備・改修工事まで、確かな技術と丁寧な施工で対応します。"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
+
+    <link rel="canonical" href="https://example.com/service.html" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="事業内容 | 衛生設備工事・水まわりリフォーム・公共工事 | 株式会社CRAFT"
     />
+    <meta
+      property="og:description"
+      content="株式会社CRAFTの事業内容をご紹介します。給排水設備などの衛生設備工事、水まわりリフォーム、公共施設の設備・改修工事まで、確かな技術と丁寧な施工で対応します。"
+    />
+    <meta property="og:url" content="https://example.com/service.html" />
+    <meta property="og:site_name" content="株式会社CRAFT" />
+    <meta property="og:image" content="https://example.com/images/ogp.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="事業内容 | 衛生設備工事・水まわりリフォーム・公共工事 | 株式会社CRAFT"
+    />
+    <meta
+      name="twitter:description"
+      content="衛生設備工事、水まわりリフォーム、公共施設の設備・改修工事まで対応しています。"
+    />
+    <meta name="twitter:image" content="https://example.com/images/ogp.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Apple Touch Icon -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&family=Pacifico&family=Zen+Kaku+Gothic+New:wght@900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.min.css" />
@@ -25,7 +62,7 @@
     <header class="site-header">
       <div class="wrap">
         <a href="index.html" class="logo">
-          <img src="images/logo.webp" alt="株式会社クラフト ロゴ" />
+          <img src="images/logo.webp" alt="株式会社CRAFT ロゴ" />
           <span>
             株式会社 CRAFT
             <small>衛生設備・リフォーム工事</small>
@@ -75,7 +112,12 @@
         <div class="page-hero__overlay"></div>
         <div class="wrap page-hero__inner">
           <p class="page-hero__eyebrow">Craft</p>
-          <h1 class="page-hero__title">SERVICE</h1>
+          <h1 class="page-hero__title">
+            SERVICE
+            <span class="visually-hidden">
+              衛生設備工事・水まわりリフォーム・公共工事
+            </span>
+          </h1>
           <p class="page-hero__subtitle">事業内容</p>
         </div>
       </section>
@@ -109,7 +151,10 @@
                 <li>洗面</li>
                 <li>キッチン</li>
               </ul>
-              <a href="#sanitary" class="service__link"
+              <a
+                href="#sanitary"
+                class="service__link"
+                aria-label="衛生設備工事の詳細を見る"
                 ><span>詳しく見る</span><span class="arrow">→</span></a
               >
             </div>
@@ -125,7 +170,10 @@
                 <li>内装改修</li>
                 <li>設備更新</li>
               </ul>
-              <a href="#reform" class="service__link"
+              <a
+                href="#reform"
+                class="service__link"
+                aria-label="水まわりリフォームの詳細を見る"
                 ><span>詳しく見る</span><span class="arrow">→</span></a
               >
             </div>
@@ -141,7 +189,10 @@
                 <li>学校</li>
                 <li>福祉施設</li>
               </ul>
-              <a href="#public" class="service__link"
+              <a
+                href="#public"
+                class="service__link"
+                aria-label="公共工事の詳細を見る"
                 ><span>詳しく見る</span><span class="arrow">→</span></a
               >
             </div>
@@ -155,7 +206,7 @@
           <div class="service-detail reveal">
             <div class="service-detail__media">
               <div class="frame">
-                <div class="ph" style="--r: 4/3">
+                <div class="ph">
                   <div class="ph__tag">
                     <svg
                       viewBox="0 0 24 24"
@@ -185,10 +236,7 @@
                 <li>配管の修繕・更新</li>
                 <li>衛生器具の取り付け</li>
               </ul>
-              <a
-                href="contact.html"
-                class="btn btn--primary"
-                style="margin-top: 32px"
+              <a href="contact.html" class="btn btn--primary"
                 ><span>無料相談はこちら</span><span class="arrow">→</span></a
               >
             </div>
@@ -202,7 +250,7 @@
           <div class="service-detail service-detail--reverse reveal">
             <div class="service-detail__media">
               <div class="frame">
-                <div class="ph" style="--r: 4/3">
+                <div class="ph">
                   <div class="ph__tag">
                     <svg
                       viewBox="0 0 24 24"
@@ -232,10 +280,7 @@
                 <li>トイレのリフォーム</li>
                 <li>内装改修・床・壁の張り替え</li>
               </ul>
-              <a
-                href="contact.html"
-                class="btn btn--primary"
-                style="margin-top: 32px"
+              <a href="contact.html" class="btn btn--primary"
                 ><span>無料相談はこちら</span><span class="arrow">→</span></a
               >
             </div>
@@ -249,7 +294,7 @@
           <div class="service-detail reveal">
             <div class="service-detail__media">
               <div class="frame">
-                <div class="ph" style="--r: 4/3">
+                <div class="ph">
                   <div class="ph__tag">
                     <svg
                       viewBox="0 0 24 24"
@@ -279,10 +324,7 @@
                 <li>官公庁施設の給排水工事</li>
                 <li>公共施設の配管修繕</li>
               </ul>
-              <a
-                href="contact.html"
-                class="btn btn--primary"
-                style="margin-top: 32px"
+              <a href="contact.html" class="btn btn--primary"
                 ><span>無料相談はこちら</span><span class="arrow">→</span></a
               >
             </div>
@@ -296,7 +338,7 @@
           <div class="sec-head sec-head--center reveal">
             <p class="eyebrow">Flow</p>
             <h2 class="heading">施工までの流れ</h2>
-            <p class="lead" style="margin-inline: auto">
+            <p class="lead">
               お問い合わせから施工完了まで、丁寧にサポートいたします。
             </p>
           </div>
@@ -307,7 +349,7 @@
                 <div class="flow__step-body">
                   <p class="flow__title">お問い合わせ</p>
                   <p class="flow__desc">
-                    電話・メールフォームよりお気軽にご相談ください。
+                    お問い合わせフォームよりお気軽にご相談ください。
                   </p>
                 </div>
               </div>
@@ -388,9 +430,7 @@
         <div class="footer__top">
           <div class="footer__brand">
             <span class="logo">株式会社 CRAFT</span>
-            <p>
-              〒000-0000　東京都〇〇市〇〇町1-2-3<br />E-Mail: info@test.aa.aa
-            </p>
+            <p>〒000-0000　東京都〇〇市〇〇町1-2-3</p>
           </div>
           <nav class="footer__nav">
             <a href="index.html">HOME</a>

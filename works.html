@@ -3,17 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>施工事例 | 株式会社CRAFT</title>
+    <title>施工事例 | 衛生設備工事・水まわりリフォーム | 株式会社CRAFT</title>
     <meta
       name="description"
-      content="株式会社CRAFTの施工事例一覧。衛生設備工事・水まわりリフォーム・公共工事など、これまで手がけた施工をカテゴリ別にご覧いただけます。"
+      content="株式会社CRAFTの施工事例をご紹介します。衛生設備工事・水まわりリフォーム・公共工事など、これまでに手がけた施工を写真とともにご覧いただけます。"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
+
+    <link rel="canonical" href="https://example.com/works.html" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="施工事例 | 衛生設備工事・水まわりリフォーム | 株式会社CRAFT"
     />
+    <meta
+      property="og:description"
+      content="株式会社CRAFTの施工事例をご紹介します。衛生設備工事・水まわりリフォーム・公共工事など、これまでに手がけた施工を写真とともにご覧いただけます。"
+    />
+    <meta property="og:url" content="https://example.com/works.html" />
+    <meta property="og:site_name" content="株式会社CRAFT" />
+    <meta property="og:image" content="https://example.com/images/ogp.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="施工事例 | 衛生設備工事・水まわりリフォーム | 株式会社CRAFT"
+    />
+    <meta
+      name="twitter:description"
+      content="株式会社CRAFTの施工事例をご紹介します。衛生設備工事・水まわりリフォーム・公共工事などの施工をご覧いただけます。"
+    />
+    <meta name="twitter:image" content="https://example.com/images/ogp.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Apple Touch Icon -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&family=Pacifico&family=Zen+Kaku+Gothic+New:wght@900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.min.css" />
@@ -25,7 +60,7 @@
     <header class="site-header">
       <div class="wrap">
         <a href="index.html" class="logo">
-          <img src="images/logo.webp" alt="株式会社クラフト ロゴ" />
+          <img src="images/logo.webp" alt="株式会社CRAFT ロゴ" />
           <span>
             株式会社 CRAFT
             <small>衛生設備・リフォーム工事</small>
@@ -75,7 +110,10 @@
         <div class="page-hero__overlay"></div>
         <div class="wrap page-hero__inner">
           <p class="page-hero__eyebrow">Craft</p>
-          <h1 class="page-hero__title">WORKS</h1>
+          <h1 class="page-hero__title">
+            WORKS
+            <span class="visually-hidden">施工事例</span>
+          </h1>
           <p class="page-hero__subtitle">施工事例一覧</p>
         </div>
       </section>
@@ -88,10 +126,46 @@
               <p class="eyebrow">Our Works</p>
               <h2 class="heading">私たちの仕事</h2>
               <p class="lead">
-                これまでに手がけた施工の一部をご紹介します。<br />丁寧な施工と確かな技術で、さまざまな現場に対応しています。
+                これまでに手がけた施工の一部をご紹介します。丁寧な施工と確かな技術で、さまざまな現場に対応しています。
               </p>
             </div>
           </div>
+
+          <!-- 注目施工事例：Before / After -->
+          <article class="works__item works__item--before-after reveal">
+            <p class="works__pickup-label">PICK UP WORKS</p>
+
+            <h3 class="works__pickup-title">施工事例ピックアップ</h3>
+            <p class="works__pickup-text">
+              築20年のマンションのトイレを、清潔感と使いやすさを兼ね備えた空間へリフォームしました。
+            </p>
+
+            <div class="works__ba">
+              <figure class="works__photo works__photo--before">
+                <img
+                  src="images/works-01-before.jpg"
+                  alt="マンショントイレリフォーム前の様子"
+                  loading="lazy"
+                />
+                <span class="works__ba-label">Before</span>
+              </figure>
+
+              <div class="works__ba-arrow" aria-hidden="true">→</div>
+
+              <figure class="works__photo works__photo--after">
+                <img
+                  src="images/works-01-after.jpg"
+                  alt="マンショントイレリフォーム後の様子"
+                  loading="lazy"
+                />
+                <span class="works__ba-label">After</span>
+                <span class="works__chip">リフォーム工事</span>
+              </figure>
+            </div>
+
+            <p class="works__title">マンション水まわりリフォーム工事</p>
+            <p class="works__meta">東京都世田谷区 ／ 2024.03</p>
+          </article>
 
           <!-- カテゴリフィルター -->
           <div class="works__filter reveal">
@@ -111,21 +185,7 @@
 
           <!-- 事例グリッド -->
           <div class="works__grid works__grid--full" id="worksGrid">
-            <a href="#" class="works__item reveal">
-              <div class="frame">
-                <figure class="works__photo">
-                  <img
-                    src="images/works-01.jpg"
-                    alt="マンション水まわりリフォーム工事"
-                    loading="lazy"
-                  />
-                  <span class="works__chip">リフォーム工事</span>
-                </figure>
-              </div>
-              <p class="works__title">マンション水まわりリフォーム工事</p>
-              <p class="works__meta">東京都世田谷区 ／ 2024.03</p>
-            </a>
-            <a href="#" class="works__item reveal">
+            <article class="works__item reveal">
               <div class="frame">
                 <figure class="works__photo">
                   <img
@@ -136,10 +196,10 @@
                   <span class="works__chip">衛生設備工事</span>
                 </figure>
               </div>
-              <p class="works__title">戸建て給排水設備工事</p>
+              <h3 class="works__title">戸建て給排水設備工事</h3>
               <p class="works__meta">東京都練馬区 ／ 2024.02</p>
-            </a>
-            <a href="#" class="works__item reveal">
+            </article>
+            <article class="works__item reveal">
               <div class="frame">
                 <figure class="works__photo">
                   <img
@@ -150,10 +210,10 @@
                   <span class="works__chip">公共工事</span>
                 </figure>
               </div>
-              <p class="works__title">公共施設トイレ改修工事</p>
+              <h3 class="works__title">公共施設トイレ改修工事</h3>
               <p class="works__meta">東京都杉並区 ／ 2024.01</p>
-            </a>
-            <a href="#" class="works__item reveal">
+            </article>
+            <article class="works__item reveal">
               <div class="frame">
                 <figure class="works__photo">
                   <img
@@ -164,10 +224,10 @@
                   <span class="works__chip">衛生設備工事</span>
                 </figure>
               </div>
-              <p class="works__title">集合住宅給水管更新工事</p>
+              <h3 class="works__title">集合住宅給水管更新工事</h3>
               <p class="works__meta">東京都品川区 ／ 2023.12</p>
-            </a>
-            <a href="#" class="works__item reveal">
+            </article>
+            <article class="works__item reveal">
               <div class="frame">
                 <figure class="works__photo">
                   <img
@@ -178,10 +238,10 @@
                   <span class="works__chip">リフォーム工事</span>
                 </figure>
               </div>
-              <p class="works__title">店舗トイレリフォーム工事</p>
+              <h3 class="works__title">店舗トイレリフォーム工事</h3>
               <p class="works__meta">神奈川県横浜市 ／ 2023.11</p>
-            </a>
-            <a href="#" class="works__item reveal">
+            </article>
+            <article class="works__item reveal">
               <div class="frame">
                 <figure class="works__photo">
                   <img
@@ -192,10 +252,10 @@
                   <span class="works__chip">公共工事</span>
                 </figure>
               </div>
-              <p class="works__title">福祉施設衛生設備工事</p>
+              <h3 class="works__title">福祉施設衛生設備工事</h3>
               <p class="works__meta">東京都調布市 ／ 2023.10</p>
-            </a>
-            <a href="#" class="works__item reveal">
+            </article>
+            <article class="works__item reveal">
               <div class="frame">
                 <figure class="works__photo">
                   <img
@@ -206,10 +266,10 @@
                   <span class="works__chip">リフォーム工事</span>
                 </figure>
               </div>
-              <p class="works__title">戸建て浴室・洗面リフォーム</p>
+              <h3 class="works__title">戸建て浴室・洗面リフォーム</h3>
               <p class="works__meta">神奈川県川崎市 ／ 2023.09</p>
-            </a>
-            <a href="#" class="works__item reveal">
+            </article>
+            <article class="works__item reveal">
               <div class="frame">
                 <figure class="works__photo">
                   <img
@@ -220,10 +280,10 @@
                   <span class="works__chip">公共工事</span>
                 </figure>
               </div>
-              <p class="works__title">学校トイレ改修工事</p>
+              <h3 class="works__title">学校トイレ改修工事</h3>
               <p class="works__meta">東京都府中市 ／ 2023.08</p>
-            </a>
-            <a href="#" class="works__item reveal">
+            </article>
+            <article class="works__item reveal">
               <div class="frame">
                 <figure class="works__photo">
                   <img
@@ -234,9 +294,9 @@
                   <span class="works__chip">衛生設備工事</span>
                 </figure>
               </div>
-              <p class="works__title">マンション排水管改修工事</p>
+              <h3 class="works__title">マンション排水管改修工事</h3>
               <p class="works__meta">東京都目黒区 ／ 2023.07</p>
-            </a>
+            </article>
           </div>
         </div>
       </section>
@@ -277,9 +337,7 @@
         <div class="footer__top">
           <div class="footer__brand">
             <span class="logo">株式会社 CRAFT</span>
-            <p>
-              〒000-0000　東京都〇〇市〇〇町1-2-3<br />E-Mail: info@test.aa.aa
-            </p>
+            <p>〒000-0000　東京都〇〇市〇〇町1-2-3</p>
           </div>
           <nav class="footer__nav">
             <a href="index.html">HOME</a>

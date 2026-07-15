@@ -3,17 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>株式会社CRAFT ｜ 衛生設備工事・リフォーム工事</title>
+    <title>株式会社CRAFT | 衛生設備工事・水まわりリフォーム・公共工事</title>
     <meta
       name="description"
-      content="株式会社CRAFTは、衛生設備工事・リフォーム工事を中心に公共工事まで幅広く対応する施工会社です。一つひとつの現場に誠実に向き合い、安心できる暮らしと快適な空間づくりを支えています。"
+      content="株式会社CRAFTは、衛生設備工事・水まわりリフォーム・公共工事に対応する施工会社です。一つひとつの現場に誠実に向き合い、確かな技術と丁寧な施工で、安心できる暮らしと快適な空間づくりを支えます。"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
+
+    <link rel="canonical" href="https://example.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="株式会社CRAFT | 衛生設備工事・水まわりリフォーム・公共工事"
     />
+    <meta
+      property="og:description"
+      content="株式会社CRAFTは、衛生設備工事・水まわりリフォーム・公共工事に対応する施工会社です。一つひとつの現場に誠実に向き合い、確かな技術と丁寧な施工で、安心できる暮らしと快適な空間づくりを支えます。"
+    />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:site_name" content="株式会社CRAFT" />
+    <meta property="og:image" content="https://example.com/images/ogp.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="株式会社CRAFT | 衛生設備工事・水まわりリフォーム・公共工事"
+    />
+    <meta
+      name="twitter:description"
+      content="株式会社CRAFTは、衛生設備工事・水まわりリフォーム・公共工事に対応する施工会社です。"
+    />
+    <meta name="twitter:image" content="https://example.com/images/ogp.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Apple Touch Icon -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&family=Pacifico&family=Zen+Kaku+Gothic+New:wght@900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.min.css" />
@@ -25,7 +60,7 @@
     <header class="site-header">
       <div class="wrap">
         <a href="index.html" class="logo">
-          <img src="images/logo.webp" alt="株式会社クラフト ロゴ" />
+          <img src="images/logo.webp" alt="株式会社CRAFT ロゴ" />
           <span>
             株式会社 CRAFT
             <small>衛生設備・リフォーム工事</small>
@@ -90,20 +125,7 @@
             <h1 class="hero__title">
               水まわり設備工事から、<br />リフォーム・公共工事まで。
             </h1>
-            <svg
-              class="hero__underline"
-              width="220"
-              height="20"
-              viewBox="0 0 220 20"
-              fill="none"
-            >
-              <path
-                d="M2,12 C40,3 90,18 140,9 C170,3 195,15 218,7"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-            </svg>
+
             <p class="lead">
               一つひとつの現場に向き合い、安心できる暮らしを支えます。
             </p>
@@ -186,6 +208,33 @@
         </div>
       </section>
 
+      <!-- MARQUEE -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <div class="marquee__content">
+            <span>RENOVATION</span>
+            <span class="marquee__dot">★</span>
+            <span>INTERIOR</span>
+            <span class="marquee__dot">★</span>
+            <span>REPAIR</span>
+            <span class="marquee__dot">★</span>
+            <span>CRAFT</span>
+            <span class="marquee__dot">★</span>
+          </div>
+
+          <div class="marquee__content">
+            <span>RENOVATION</span>
+            <span class="marquee__dot">★</span>
+            <span>INTERIOR</span>
+            <span class="marquee__dot">★</span>
+            <span>REPAIR</span>
+            <span class="marquee__dot">★</span>
+            <span>CRAFT</span>
+            <span class="marquee__dot">★</span>
+          </div>
+        </div>
+      </div>
+
       <!-- SERVICE -->
       <section class="block" id="service">
         <div class="wrap">
@@ -204,12 +253,9 @@
               <div class="service__card reveal">
                 <div class="service__top">
                   <span class="service__icon">
-                    <img
-                      src="images/sanitary-works.svg"
-                      alt="衛生設備工事のアイコン"
-                    />
+                    <img src="images/sanitary-works.svg" alt="" />
                   </span>
-                  <p class="service__title">衛生設備工事</p>
+                  <h3 class="service__title">衛生設備工事</h3>
                 </div>
                 <ul class="service__list">
                   <li>給排水設備</li>
@@ -217,27 +263,32 @@
                   <li>洗面</li>
                   <li>キッチン</li>
                 </ul>
-                <a href="service.html#sanitary" class="service__link"
-                  ><span>詳しく見る</span><span class="arrow">→</span></a
+                <a
+                  href="service.html#sanitary"
+                  class="service__link"
+                  aria-label="衛生設備工事の詳細を見る"
                 >
+                  <span>詳しく見る</span>
+                  <span class="arrow">→</span>
+                </a>
               </div>
 
               <div class="service__card reveal">
                 <div class="service__top">
                   <span class="service__icon">
-                    <img
-                      src="images/reform.svg"
-                      alt="リフォーム工事のアイコン"
-                    />
+                    <img src="images/reform.svg" alt="" />
                   </span>
-                  <p class="service__title">リフォーム工事</p>
+                  <h3 class="service__title">リフォーム工事</h3>
                 </div>
                 <ul class="service__list">
                   <li>水回りリフォーム</li>
                   <li>内装改修</li>
                   <li>設備更新</li>
                 </ul>
-                <a href="service.html#reform" class="service__link"
+                <a
+                  href="service.html#reform"
+                  class="service__link"
+                  aria-label="水まわりリフォームの詳細を見る"
                   ><span>詳しく見る</span><span class="arrow">→</span></a
                 >
               </div>
@@ -245,19 +296,19 @@
               <div class="service__card reveal">
                 <div class="service__top">
                   <span class="service__icon">
-                    <img
-                      src="images/public-works.svg"
-                      alt="公共工事のアイコン"
-                    />
+                    <img src="images/public-works.svg" alt="" />
                   </span>
-                  <p class="service__title">公共工事</p>
+                  <h3 class="service__title">公共工事</h3>
                 </div>
                 <ul class="service__list">
                   <li>公共施設</li>
                   <li>学校</li>
                   <li>福祉施設</li>
                 </ul>
-                <a href="service.html#public" class="service__link"
+                <a
+                  href="service.html#public"
+                  class="service__link"
+                  aria-label="公共工事の詳細を見る"
                   ><span>詳しく見る</span><span class="arrow">→</span></a
                 >
               </div>
@@ -283,21 +334,21 @@
             <div class="strength__grid">
               <div class="strength__item reveal">
                 <p class="strength__num">01</p>
-                <p class="strength__title">誠実な対応</p>
+                <h3 class="strength__title">誠実な対応</h3>
                 <p class="strength__desc">
                   お客様とのコミュニケーションを大切にし、ご要望に寄り添った最適なご提案を心がけています。
                 </p>
               </div>
               <div class="strength__item reveal">
                 <p class="strength__num">02</p>
-                <p class="strength__title">丁寧な施工</p>
+                <h3 class="strength__title">丁寧な施工</h3>
                 <p class="strength__desc">
                   一つひとつの現場を丁寧に施工し、細部までこだわった高品質な仕上がりを実現します。
                 </p>
               </div>
               <div class="strength__item reveal">
                 <p class="strength__num">03</p>
-                <p class="strength__title">確かな技術</p>
+                <h3 class="strength__title">確かな技術</h3>
                 <p class="strength__desc">
                   豊富な経験と専門知識を活かし、安全で安心できる設備工事をご提供します。
                 </p>
@@ -319,7 +370,11 @@
               <p class="lead">
                 はじめまして、株式会社クラフトの代表、〇〇です。設立したばかりの会社だからこそ、一つひとつのご縁を大切にし、丁寧な仕事と誠実な対応を心がけています。地域に根ざし、信頼される会社を目指してまいります。
               </p>
-              <a href="company.html#president" class="btn btn--outline">
+              <a
+                href="company.html#president"
+                class="btn btn--outline"
+                aria-label="代表挨拶の詳細を見る"
+              >
                 <span>詳しく見る</span>
                 <span class="arrow">→</span>
               </a>
@@ -347,7 +402,10 @@
               </div>
             </div>
             <div class="about__belief reveal">
-              <p class="about__belief-title">"Craft" に込めた想い</p>
+              <h3 class="about__belief-title">
+                <span class="about__belief-brand">CRAFT</span>
+                <span>に込めた想い</span>
+              </h3>
               <div class="about__belief-rule"></div>
               <p>
                 「Craft」には、<strong>技術（Craftsmanship）</strong>と<strong>創造（Create）</strong>の想いを込めました。確かな技術で、暮らしやすい空間を創り、お客様の毎日に寄り添い続ける存在でありたいと考えています。
@@ -375,7 +433,7 @@
             <dl class="company__table reveal">
               <div class="company__row">
                 <dt>会社名</dt>
-                <dd>株式会社クラフト</dd>
+                <dd>株式会社CRAFT</dd>
               </div>
               <div class="company__row">
                 <dt>所在地</dt>
@@ -384,14 +442,21 @@
               <div class="company__row">
                 <dt>連絡先</dt>
                 <dd>
-                  お問い合わせフォームよりご連絡ください。<br />
-                  内容を確認のうえ、担当者よりご連絡いたします。
-                  <small>※お電話での受付は行っておりません。</small>
+                  お問い合わせフォームよりご連絡ください。
+                  <small>
+                    お問い合わせ内容を確認後、担当者よりご返信いたします。<br />
+                    お電話でのご連絡が必要な場合は、個別に連絡先をご案内いたします。
+                  </small>
                 </dd>
               </div>
               <div class="company__row">
-                <dt>営業時間</dt>
-                <dd>8:00〜17:00（土日祝休み）</dd>
+                <dt>お問い合わせ対応</dt>
+                <dd>
+                  平日 9:00～18:00
+                  <small>
+                    土日・祝日にいただいたお問い合わせは、翌営業日以降に順次ご返信いたします。
+                  </small>
+                </dd>
               </div>
               <div class="company__row">
                 <dt>適格請求書発行事業者登録番号</dt>
@@ -403,7 +468,7 @@
               </div>
               <div class="company__row">
                 <dt>設立</dt>
-                <dd>2024年〇月</dd>
+                <dd>2025年〇月</dd>
               </div>
             </dl>
           </div>
@@ -446,9 +511,7 @@
         <div class="footer__top">
           <div class="footer__brand">
             <span class="logo">株式会社 CRAFT</span>
-            <p>
-              〒000-0000　東京都〇〇市〇〇町1-2-3<br />E-Mail: info@test.aa.aa
-            </p>
+            <p>〒000-0000　東京都〇〇市〇〇町1-2-3</p>
           </div>
           <nav class="footer__nav">
             <a href="index.html">HOME</a>
