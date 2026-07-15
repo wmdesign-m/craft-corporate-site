@@ -27,23 +27,20 @@ const io = new IntersectionObserver(
 );
 revealEls.forEach((el) => io.observe(el));
 
-// Active nav link on scroll
-const sections = document.querySelectorAll("main .block");
-const navLinks = document.querySelectorAll(".nav a");
-const navIO = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute("id");
-        navLinks.forEach((link) => {
-          link.classList.toggle(
-            "is-active",
-            link.getAttribute("href") === "#" + id,
-          );
-        });
-      }
+// FAQ accordion
+const faqQuestions = document.querySelectorAll(".faq__question");
+
+faqQuestions.forEach((question) => {
+  question.addEventListener("click", () => {
+    const faqItem = question.closest(".faq__item");
+    const isOpen = faqItem.classList.contains("is-open");
+
+    document.querySelectorAll(".faq__item").forEach((item) => {
+      item.classList.remove("is-open");
     });
-  },
-  { threshold: 0.5 },
-);
-sections.forEach((sec) => navIO.observe(sec));
+
+    if (!isOpen) {
+      faqItem.classList.add("is-open");
+    }
+  });
+});
