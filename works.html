@@ -131,171 +131,643 @@
             </div>
           </div>
 
-          <!-- 注目施工事例：Before / After -->
+          <!-- PICK UP: Before / During / After -->
           <article class="works__item works__item--before-after reveal">
             <p class="works__pickup-label">PICK UP WORKS</p>
-
-            <h3 class="works__pickup-title">施工事例ピックアップ</h3>
+            <h3 class="works__pickup-title">キッチン改修</h3>
             <p class="works__pickup-text">
-              築20年のマンションのトイレを、清潔感と使いやすさを兼ね備えた空間へリフォームしました。
+              キッチン改修の施工前・施工中・施工後を、3枚の写真でご紹介します。
             </p>
-
-            <div class="works__ba">
-              <figure class="works__photo works__photo--before">
-                <img
-                  src="images/works-01-before.jpg"
-                  alt="マンショントイレリフォーム前の様子"
-                  loading="lazy"
-                />
-                <span class="works__ba-label">Before</span>
+            <div class="works__ba works__ba--three">
+              <figure class="works__stage">
+                <div class="works__photo">
+                  <img
+                    src="images/kitchen-03-before.webp"
+                    alt="キッチン改修 03 施工前"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption class="works__stage-label">
+                  BEFORE / 施工前
+                </figcaption>
               </figure>
-
-              <div class="works__ba-arrow" aria-hidden="true">→</div>
-
-              <figure class="works__photo works__photo--after">
-                <img
-                  src="images/works-01-after.jpg"
-                  alt="マンショントイレリフォーム後の様子"
-                  loading="lazy"
-                />
-                <span class="works__ba-label">After</span>
-                <span class="works__chip">リフォーム工事</span>
+              <figure class="works__stage">
+                <div class="works__photo">
+                  <img
+                    src="images/kitchen-03-during.webp"
+                    alt="キッチン改修 03 施工中"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption class="works__stage-label">
+                  DURING / 施工中
+                </figcaption>
+              </figure>
+              <figure class="works__stage">
+                <div class="works__photo">
+                  <img
+                    src="images/kitchen-03-after.webp"
+                    alt="キッチン改修 03 施工後"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption class="works__stage-label">
+                  AFTER / 施工後
+                </figcaption>
               </figure>
             </div>
-
-            <p class="works__title">マンション水まわりリフォーム工事</p>
-            <p class="works__meta">東京都世田谷区 ／ 2024.03</p>
           </article>
 
-          <!-- カテゴリフィルター -->
-          <div class="works__filter reveal">
-            <button class="works__filter-btn is-active" data-filter="all">
+          <!-- Category filter: 13 projects -->
+          <div
+            class="works__filter reveal"
+            role="group"
+            aria-label="施工事例のカテゴリー"
+          >
+            <button
+              type="button"
+              class="works__filter-btn is-active"
+              data-filter="all"
+              aria-pressed="true"
+              aria-controls="worksGrid"
+            >
               ALL
             </button>
-            <button class="works__filter-btn" data-filter="reform">
-              リフォーム工事
+            <button
+              type="button"
+              class="works__filter-btn"
+              data-filter="bathroom"
+              aria-pressed="false"
+              aria-controls="worksGrid"
+            >
+              浴室
             </button>
-            <button class="works__filter-btn" data-filter="sanitary">
-              衛生設備工事
+            <button
+              type="button"
+              class="works__filter-btn"
+              data-filter="kitchen"
+              aria-pressed="false"
+              aria-controls="worksGrid"
+            >
+              キッチン
             </button>
-            <button class="works__filter-btn" data-filter="public">
-              公共工事
+            <button
+              type="button"
+              class="works__filter-btn"
+              data-filter="toilet"
+              aria-pressed="false"
+              aria-controls="worksGrid"
+            >
+              トイレ
+            </button>
+            <button
+              type="button"
+              class="works__filter-btn"
+              data-filter="vanity"
+              aria-pressed="false"
+              aria-controls="worksGrid"
+            >
+              洗面台
+            </button>
+            <button
+              type="button"
+              class="works__filter-btn"
+              data-filter="water-heater"
+              aria-pressed="false"
+              aria-controls="worksGrid"
+            >
+              給湯器
+            </button>
+            <button
+              type="button"
+              class="works__filter-btn"
+              data-filter="piping"
+              aria-pressed="false"
+              aria-controls="worksGrid"
+            >
+              配管
             </button>
           </div>
 
-          <!-- 事例グリッド -->
           <div class="works__grid works__grid--full" id="worksGrid">
-            <article class="works__item reveal">
-              <div class="frame">
-                <figure class="works__photo">
-                  <img
-                    src="images/works-02.jpg"
-                    alt="戸建て給排水設備工事"
-                    loading="lazy"
-                  />
-                  <span class="works__chip">衛生設備工事</span>
+            <article
+              class="works__item works__case reveal"
+              id="bathroom-01"
+              data-category="bathroom"
+              aria-labelledby="bathroom-01-title"
+            >
+              <h3 class="works__title" id="bathroom-01-title">浴室改修</h3>
+              <p class="works__case-category">浴室</p>
+              <div class="frame works__stages">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/bathroom-01-before.webp"
+                      alt="浴室改修 01 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/bathroom-01-after.webp"
+                      alt="浴室改修 01 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
                 </figure>
               </div>
-              <h3 class="works__title">戸建て給排水設備工事</h3>
-              <p class="works__meta">東京都練馬区 ／ 2024.02</p>
             </article>
-            <article class="works__item reveal">
-              <div class="frame">
-                <figure class="works__photo">
-                  <img
-                    src="images/works-03.jpg"
-                    alt="公共施設トイレ改修工事"
-                    loading="lazy"
-                  />
-                  <span class="works__chip">公共工事</span>
+            <article
+              class="works__item works__case reveal"
+              id="bathroom-02"
+              data-category="bathroom"
+              aria-labelledby="bathroom-02-title"
+            >
+              <h3 class="works__title" id="bathroom-02-title">浴室改修</h3>
+              <p class="works__case-category">浴室</p>
+              <div class="frame works__stages">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/bathroom-02-before.webp"
+                      alt="浴室改修 02 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/bathroom-02-after.webp"
+                      alt="浴室改修 02 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
                 </figure>
               </div>
-              <h3 class="works__title">公共施設トイレ改修工事</h3>
-              <p class="works__meta">東京都杉並区 ／ 2024.01</p>
             </article>
-            <article class="works__item reveal">
-              <div class="frame">
-                <figure class="works__photo">
-                  <img
-                    src="images/works-04.jpg"
-                    alt="集合住宅給水管更新工事"
-                    loading="lazy"
-                  />
-                  <span class="works__chip">衛生設備工事</span>
+            <article
+              class="works__item works__case reveal"
+              id="bathroom-03"
+              data-category="bathroom"
+              aria-labelledby="bathroom-03-title"
+            >
+              <h3 class="works__title" id="bathroom-03-title">浴室改修</h3>
+              <p class="works__case-category">浴室</p>
+              <div class="frame works__stages">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/bathroom-03-before.webp"
+                      alt="浴室改修 03 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/bathroom-03-after.webp"
+                      alt="浴室改修 03 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
                 </figure>
               </div>
-              <h3 class="works__title">集合住宅給水管更新工事</h3>
-              <p class="works__meta">東京都品川区 ／ 2023.12</p>
             </article>
-            <article class="works__item reveal">
-              <div class="frame">
-                <figure class="works__photo">
-                  <img
-                    src="images/works-05.jpg"
-                    alt="店舗トイレリフォーム工事"
-                    loading="lazy"
-                  />
-                  <span class="works__chip">リフォーム工事</span>
+            <article
+              class="works__item works__case reveal"
+              id="bathroom-04"
+              data-category="bathroom"
+              aria-labelledby="bathroom-04-title"
+            >
+              <h3 class="works__title" id="bathroom-04-title">浴室改修</h3>
+              <p class="works__case-category">浴室</p>
+              <div class="frame works__stages">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/bathroom-04-before.webp"
+                      alt="浴室改修 04 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/bathroom-04-after.webp"
+                      alt="浴室改修 04 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
                 </figure>
               </div>
-              <h3 class="works__title">店舗トイレリフォーム工事</h3>
-              <p class="works__meta">神奈川県横浜市 ／ 2023.11</p>
             </article>
-            <article class="works__item reveal">
-              <div class="frame">
-                <figure class="works__photo">
-                  <img
-                    src="images/works-06.jpg"
-                    alt="福祉施設衛生設備工事"
-                    loading="lazy"
-                  />
-                  <span class="works__chip">公共工事</span>
+            <article
+              class="works__item works__case reveal"
+              id="vanity"
+              data-category="vanity"
+              aria-labelledby="vanity-title"
+            >
+              <h3 class="works__title" id="vanity-title">洗面台改修</h3>
+              <p class="works__case-category">洗面台</p>
+              <div class="frame works__stages">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/vanity-before.webp"
+                      alt="洗面台改修 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/vanity-after.webp"
+                      alt="洗面台改修 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
                 </figure>
               </div>
-              <h3 class="works__title">福祉施設衛生設備工事</h3>
-              <p class="works__meta">東京都調布市 ／ 2023.10</p>
             </article>
-            <article class="works__item reveal">
-              <div class="frame">
-                <figure class="works__photo">
-                  <img
-                    src="images/works-07.jpg"
-                    alt="戸建て浴室・洗面リフォーム"
-                    loading="lazy"
-                  />
-                  <span class="works__chip">リフォーム工事</span>
+            <article
+              class="works__item works__case reveal"
+              id="toilet-03"
+              data-category="toilet"
+              aria-labelledby="toilet-03-title"
+            >
+              <h3 class="works__title" id="toilet-03-title">トイレ改修</h3>
+              <p class="works__case-category">トイレ</p>
+              <div class="frame works__stages">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/toilet-03-during.webp"
+                      alt="トイレ改修 03 施工中"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    DURING / 施工中
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/toilet-03-after.webp"
+                      alt="トイレ改修 03 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
                 </figure>
               </div>
-              <h3 class="works__title">戸建て浴室・洗面リフォーム</h3>
-              <p class="works__meta">神奈川県川崎市 ／ 2023.09</p>
             </article>
-            <article class="works__item reveal">
-              <div class="frame">
-                <figure class="works__photo">
-                  <img
-                    src="images/works-08.jpg"
-                    alt="学校トイレ改修工事"
-                    loading="lazy"
-                  />
-                  <span class="works__chip">公共工事</span>
+            <article
+              class="works__item works__case reveal"
+              id="toilet-01"
+              data-category="toilet"
+              aria-labelledby="toilet-01-title"
+            >
+              <h3 class="works__title" id="toilet-01-title">トイレ改修</h3>
+              <p class="works__case-category">トイレ</p>
+              <div class="frame works__stages works__stages--three">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/toilet-01-before.webp"
+                      alt="トイレ改修 01 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/toilet-01-during.webp"
+                      alt="トイレ改修 01 施工中"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    DURING / 施工中
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/toilet-01-after.webp"
+                      alt="トイレ改修 01 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
                 </figure>
               </div>
-              <h3 class="works__title">学校トイレ改修工事</h3>
-              <p class="works__meta">東京都府中市 ／ 2023.08</p>
             </article>
-            <article class="works__item reveal">
-              <div class="frame">
-                <figure class="works__photo">
-                  <img
-                    src="images/works-09.jpg"
-                    alt="マンション排水管改修工事"
-                    loading="lazy"
-                  />
-                  <span class="works__chip">衛生設備工事</span>
+            <article
+              class="works__item works__case reveal"
+              id="toilet-02"
+              data-category="toilet"
+              aria-labelledby="toilet-02-title"
+            >
+              <h3 class="works__title" id="toilet-02-title">トイレ改修</h3>
+              <p class="works__case-category">トイレ</p>
+              <div class="frame works__stages works__stages--three">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/toilet-02-before.webp"
+                      alt="トイレ改修 02 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/toilet-02-during.webp"
+                      alt="トイレ改修 02 施工中"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    DURING / 施工中
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/toilet-02-after.webp"
+                      alt="トイレ改修 02 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
                 </figure>
               </div>
-              <h3 class="works__title">マンション排水管改修工事</h3>
-              <p class="works__meta">東京都目黒区 ／ 2023.07</p>
+            </article>
+            <article
+              class="works__item works__case reveal"
+              id="kitchen-01"
+              data-category="kitchen"
+              aria-labelledby="kitchen-01-title"
+            >
+              <h3 class="works__title" id="kitchen-01-title">キッチン改修</h3>
+              <p class="works__case-category">キッチン</p>
+              <div class="frame works__stages">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/kitchen-01-before.webp"
+                      alt="キッチン改修 01 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/kitchen-01-after.webp"
+                      alt="キッチン改修 01 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+            <article
+              class="works__item works__case reveal"
+              id="kitchen-02"
+              data-category="kitchen"
+              aria-labelledby="kitchen-02-title"
+            >
+              <h3 class="works__title" id="kitchen-02-title">キッチン改修</h3>
+              <p class="works__case-category">キッチン</p>
+              <div class="frame works__stages">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/kitchen-02-before.webp"
+                      alt="キッチン改修 02 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/kitchen-02-after.webp"
+                      alt="キッチン改修 02 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+            <article
+              class="works__item works__case reveal"
+              id="kitchen-03"
+              data-category="kitchen"
+              aria-labelledby="kitchen-03-title"
+            >
+              <h3 class="works__title" id="kitchen-03-title">キッチン改修</h3>
+              <p class="works__case-category">キッチン</p>
+              <div class="frame works__stages works__stages--three">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/kitchen-03-before.webp"
+                      alt="キッチン改修 03 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/kitchen-03-during.webp"
+                      alt="キッチン改修 03 施工中"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    DURING / 施工中
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/kitchen-03-after.webp"
+                      alt="キッチン改修 03 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+            <article
+              class="works__item works__case reveal"
+              id="gas-water-heater"
+              data-category="water-heater"
+              aria-labelledby="gas-water-heater-title"
+            >
+              <h3 class="works__title" id="gas-water-heater-title">
+                室外ガス給湯器
+              </h3>
+              <p class="works__case-category">給湯器</p>
+              <div class="frame works__stages works__stages--three">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/gas-water-heater01.webp"
+                      alt="室外ガス給湯器 施工工程 01"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    施工工程 01
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/gas-water-heater02.webp"
+                      alt="室外ガス給湯器 施工工程 02"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    施工工程 02
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/gas-water-heater03.webp"
+                      alt="室外ガス給湯器 施工工程 03"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    施工工程 03
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+            <article
+              class="works__item works__case reveal"
+              id="rooftop-piping"
+              data-category="piping"
+              aria-labelledby="rooftop-piping-title"
+            >
+              <h3 class="works__title" id="rooftop-piping-title">
+                屋上配管工事
+              </h3>
+              <p class="works__case-category">配管</p>
+              <div class="frame works__stages works__stages--three">
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/rooftop-piping-before.webp"
+                      alt="屋上配管工事 施工前"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    BEFORE / 施工前
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/rooftop-piping-during.webp"
+                      alt="屋上配管工事 施工中"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    DURING / 施工中
+                  </figcaption>
+                </figure>
+                <figure class="works__stage">
+                  <div class="works__photo">
+                    <img
+                      src="images/rooftop-piping-after.webp"
+                      alt="屋上配管工事 施工後"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption class="works__stage-label">
+                    AFTER / 施工後
+                  </figcaption>
+                </figure>
+              </div>
             </article>
           </div>
         </div>
