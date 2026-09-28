@@ -44,3 +44,23 @@ faqQuestions.forEach((question) => {
     }
   });
 });
+
+// Works category filter (the pickup stays visible).
+const worksGrid = document.getElementById("worksGrid");
+if (worksGrid) {
+  const filterButtons = document.querySelectorAll(".works__filter-btn[data-filter]");
+  const worksCases = worksGrid.querySelectorAll(".works__case[data-category]");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const category = button.dataset.filter;
+      filterButtons.forEach((filterButton) => {
+        const active = filterButton === button;
+        filterButton.classList.toggle("is-active", active);
+        filterButton.setAttribute("aria-pressed", String(active));
+      });
+      worksCases.forEach((item) => {
+        item.hidden = category !== "all" && item.dataset.category !== category;
+      });
+    });
+  });
+}
